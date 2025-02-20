@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MoriaDig": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\steam\\steamapps\\common\\The Lord of the Rings Return to Moria™\\Moria\\Content\\Paks\""
+    }
+  }
+}
