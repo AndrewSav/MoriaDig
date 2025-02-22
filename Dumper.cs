@@ -22,13 +22,6 @@ public static class Dumper
             JProperty row = (JProperty)jToken;
             JObject o = (JObject)row.Value;
 
-            // Apparently both Live and Test appear in the actual game
-            if (o.StringFromJsonPath("$.EnabledState") != "ERowEnabledState::Live" &&
-                o.StringFromJsonPath("$.EnabledState") != "ERowEnabledState::Test")
-            {
-                continue; // Skip entries that are not enabled in the game files
-            }
-
             // We will keep columns for each output row in this dictionary
             OrderedDictionary<string, string> r = [];
             recipes.Add(r);
